@@ -1,4 +1,5 @@
-package bookExamples;
+package pp1;
+
 
 public class CountFlips {
 
@@ -11,11 +12,12 @@ public class CountFlips {
 		
 		for (int count = 1; count <= FLIPS; count++)
 		{
-			myCoin.flip();
-			if (myCoin.isHeads())
-				heads++;
-			else
-				tails++;
+				myCoin.flip();
+				if (myCoin.isHeads())
+					heads++;
+				else
+					tails++;
+			
 		}
 		
 		System.out.println("Number of flips: " + FLIPS);
