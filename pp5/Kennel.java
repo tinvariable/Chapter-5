@@ -4,8 +4,13 @@ public class Kennel {
 
 	public static void main(String[] args) 
 	{
-		Dog dog1 = new Dog("Bob", 10);
-		System.out.println(dog1.dogYears());
+		Dog dog = new Dog();
+		dog.setAge(10);
+		dog.setName("Jeff");
+		dog.dogYears();
+		
+		System.out.println(dog);
+		
 		
 
 	}

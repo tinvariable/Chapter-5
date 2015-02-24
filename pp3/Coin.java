@@ -1,9 +1,9 @@
-package pp1;
+package pp3;
 
 public class Coin 
 {
 	private final int HEADS = 0;
-	private int face;
+	enum FACE {Heads, Tails};
 	private boolean head;
 	
 	

@@ -7,21 +7,26 @@ public class Dog
 	int age;
 	String n;
 	int doga;
-	public Dog(String n, int a)
+	public Dog()
 	{
-		n = name;
-		a = age;
+		n = "Name";
+		doga = 1;
+		age = doga*2;
 	}
 	public String getName()
 	{
 		return name;
 	}
-	public String setName()
+	public void setName(String dog)
 	{
-		n = name;
-		return n;
+		name = dog;
+		
 	}
-	public int setAge()
+	public void setAge(int years)
+	{
+		age = years;
+	}
+	public int getAge()
 	{
 		return age;
 	}
@@ -29,6 +34,10 @@ public class Dog
 	{
 		doga = age*7;
 		return doga;
+	}
+	public String toString()
+	{
+		return ("Dog name: " + name + "\n" + "Age in person years: " + age + "\n" + "Age in dog years: " + doga);
 	}
 
 }
